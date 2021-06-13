@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- link fontawesome -->
+    <script src="https://kit.fontawesome.com/cacd837708.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        div.footer i.fab {
+            font-size: 25px;
+            margin: 5px 15px;
+        }
+
+        .contact_details .img1 {
+            height: 650px;
+            position: relative;
+        }
+
+        .contact_details .img1 img {
+            width: 350px;
+            background-size: cover;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            box-shadow: 5px 5px 30px black;
+            transition: all linear 0.5s;
+        }
+
+        .contact_details .img1 img:hover {
+            box-shadow: 10px 10px 25px black;
+        }
+
+        .contact_details .md_details h3,
+        .contact_details .director_details h3 {
+            transition: all 0.5s linear;
+        }
+
+        /* -------------media query for device with width of less than 600px----------------- */
+        @media only screen and (max-width: 600px) {
+            .navbar #logo {
+                width: 30px;
+            }
+
+            .navbar .navbar-brand {
+                margin-left: 0;
+                font-size: 15px;
+            }
+            .contact_details img {
+                width: 300px !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            .contact_details .img1{
+                height: 550px;
+            }
+
+            .contact_details .md_details h3,
+            .contact_details .director_details h3 {
+                font-size: 18px;
+            }
+        }
+
+        .contact_details .md_details h3:hover,
+        .contact_details .director_details h3:hover {
+            background: yellow;
+        }
+    </style>
+    <title>VIKRAM SHORTHAND COLLEGE</title>
+</head>
+
+<body>
+    <!-- ----------NAVBAR-----STARTS-----HERE--------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="index.html"><img id="logo" src="img/logo.jpeg" width="50px" alt="" style="border-radius: 50%;"></a>
+        <a class="navbar-brand ml-4" href="index.html">VIKRAM SHORTHAND COLLEGE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-center" href="contact_us.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ----------NAVBAR-----ENDS-----HERE--------- -->
+
+    <!-- ------------------CONTACT--------DETAILS----------------- -->
+    <div class="container-fluid contact_details">
+        <div class="row">
+            <div class="col-12 col-md-6 img1">
+                <img src="img/managing director.jpeg" alt="">
+                <div class="md_details" style="position: absolute;bottom:0;left: 50%;transform:translateX(-50%);">
+                    <h3 class="text-center"> Managing Director </h3>
+                    <p class="text-center" style="font-size: 16px;"> Contact : +91 8745870067 </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 img1">
+                <img src="img/director.jpeg" alt="">
+                <div class="director_details" style="position: absolute;bottom:0;left: 50%;transform:translateX(-50%);">
+                    <h3 class="text-center"> Director </h3>
+                    <p class="text-center" style="font-size: 16px;"> Contact : +91 8745870067 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- --------------CONTACT-----DETAILS-----ENDS------------ -->
+
+    <!-- --------------FORM------STARTS-------HERE------------- -->
+    <div class="container py-5 mb-5" style="background:#ddd;">
+        <form>
+            <h2 class="text-center text-uppercase">Submit Query</h2>
+            <div class="form-group">
+                <label for="name">Email Full Name</label>
+                <input type="email" class="form-control" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="number">Mob. Number</label>
+                <input type="password" class="form-control" id="number" placeholder="Mobile Number">
+            </div>
+            <div class="form-group">
+                <label for="concern">Describe Your Concern</label>
+                <textarea class="form-control" id="concern" rows="3" placeholder="Describe Your Concern Here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- --------------FORM------ENDS-------HERE------------- -->
+
+    <!-- --------------F-O-O-T-E-R------------ -->
+    <div class="container-fluid footer">
+        <h2 class="text-center bg-info text-white">VIKRAM SHORTHAND COLLEGE</h2>
+        <p class="text-center bg-dark text-white">D 208 A, Street no. 40 Main Road, Rajapuri, Madhu Vihar,<br> Uttam
+            Nagar, New Delhi-110059<br><br> Social Links <br><br>
+            <a href="https://www.facebook.com/lalitsinghrocks/" class="text-white" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lalitsinggh/" class="text-white" target="_blank"><i
+                    class="fab fa-instagram-square"></i></a>
+            <i class="fab fa-youtube"></i>
+        </p>
+    </div>
+    <!-- --------------F-O-O-T-E-R--E-N-D-S---------- -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
